@@ -1,0 +1,104 @@
+name: void
+label: Void
+description: Pure black with subtle grays and a single ghostly lavender accent. Ultra-minimalist for distraction-free focus.
+
+palette:
+  background:
+    hex: "#000000"
+    alpha: 1.0
+  midground:
+    hex: "#737373"
+    alpha: 1.0
+  foreground:
+    hex: "#a78bfa"
+    alpha: 0.12
+  warmGlow: "rgba(0, 0, 0, 0)"
+  noiseOpacity: 0.15
+
+typography:
+  fontSans: '"Inter", system-ui, sans-serif'
+  fontMono: '"JetBrains Mono", ui-monospace, monospace'
+  fontDisplay: '"Inter", system-ui, sans-serif'
+  fontUrl: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+  baseSize: "14px"
+  lineHeight: "1.5"
+  letterSpacing: "0.01em"
+
+layout:
+  radius: "0"
+  density: compact
+
+layoutVariant: standard
+
+assets:
+  bg: "none"
+
+componentStyles:
+  card:
+    boxShadow: "inset 0 0 0 1px rgba(115, 115, 115, 0.18)"
+    background: "rgba(10, 10, 10, 0.95)"
+  header:
+    background: "rgba(5, 5, 5, 0.98)"
+    boxShadow: "inset 0 -1px 0 rgba(115, 115, 115, 0.12)"
+  tab:
+    boxShadow: "none"
+  backdrop: {}
+  sidebar: {}
+  footer: {}
+  progress: {}
+  badge: {}
+  page: {}
+
+colorOverrides:
+  primary: "#a78bfa"
+  primaryForeground: "#000000"
+  accent: "#525252"
+  accentForeground: "#e5e5e5"
+  ring: "#a78bfa"
+  destructive: "#ef4444"
+  border: "rgba(115, 115, 115, 0.15)"
+  muted: "#171717"
+  mutedForeground: "#525252"
+
+customCSS: |
+  /* Remove all decorative glow; keep only essential borders */
+  .card {
+    transition: border-color 0.2s ease;
+  }
+  .card:hover {
+    box-shadow: inset 0 0 0 1px rgba(167, 139, 250, 0.35);
+  }
+  /* Dim scrollbar for minimalism */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #262626;
+    border-radius: 0;
+  }
+
+  /* Daily token usage graph color overrides — grayscale + lavender accent */
+  .bg-\[\#ffe6cb\] {
+    background-color: #1a1a1a !important;
+  }
+  .bg-emerald-500 {
+    background-color: #404040 !important;
+  }
+  .text-emerald-400 {
+    color: #a78bfa !important;
+  }
+  .text-emerald-500 {
+    color: #8b74d1 !important;
+  }
+  .bg-amber-500 {
+    background-color: #525252 !important;
+  }
+  .text-amber-400 {
+    color: #a3a3a3 !important;
+  }
+  .text-red-400 {
+    color: #fca5a5 !important;
+  }
+  .bg-red-500 {
+    background-color: #737373 !important;
+  }
