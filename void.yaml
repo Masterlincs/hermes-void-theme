@@ -78,9 +78,9 @@ customCSS: |
   }
 
   /* Daily token usage graph — match void palette */
-  .bg-\[\#ffe6cb\] { background-color: #a78bfa !important; }
-  .bg-\[\#ffe6cb\]\/70 { background-color: color-mix(in srgb, #a78bfa 70%, transparent) !important; }
-  .text-\[\#ffe6cb\] { color: #a78bfa !important; }
-  .bg-emerald-500 { background-color: #525252 !important; }
-  .bg-emerald-500\/70 { background-color: color-mix(in srgb, #525252 70%, transparent) !important; }
-  .text-emerald-400 { color: #e5e5e5 !important; }
+  .bg-\[\#ffe6cb\] { background-color: #525252 !important; }
+  .bg-\[\#ffe6cb\]\/70 { background-color: color-mix(in srgb, #525252 70%, transparent) !important; }
+  .text-\[\#ffe6cb\] { color: #e5e5e5 !important; }
+  .bg-emerald-500 { background-color: #a78bfa !important; }
+  .bg-emerald-500\/70 { background-color: color-mix(in srgb, #a78bfa 70%, transparent) !important; }
+  .text-emerald-400 { color: #a78bfa !important; }
